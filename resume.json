@@ -1,0 +1,124 @@
+{
+  "basics": {
+    "name": "Mike Yates",
+    "label": "Web Developer",
+    "picture": "",
+    "email": "mike@yatesdev.com",
+    "phone": "(443) 885-0823",
+    "website": "http://mikeyates.io",
+    "summary": "Hello! I'm Mike Yates, Jr. Web Developer with eclectic interests. I have experience with a wide gamut of projects, from large enterprise data driven web apps to small static sites. Well-versed in numerous programming languages including C#, Python, JavaScript, and SQL. I have had lots of experience interacting with customers and strive to achieve their visions as tangible results.",
+    "location": {
+      "address": "441 E. Fort Ave",
+      "postalCode": "MD 21230",
+      "city": "Baltimore",
+      "countryCode": "US",
+      "region": "Maryland"
+    },
+    "profiles": [{
+      "network": "Facebook",
+      "url": "https://facebook.com/yates.m"
+    },
+    {
+      "network": "Github",
+      "url": "https://github.com/yatesdev/"
+    }]
+  },
+  "work": [{
+    "company": "NIC",
+    "position": "Web Developer II",
+    "website": "https://nic.org",
+    "startDate": "2016-01-20",
+    "endDate": "2014-01-01",
+    "summary": "Description...",
+    "highlights": [
+      "Started the company"
+    ]
+  },
+  {
+    "company": "NIC",
+    "position": "Web Development Intern",
+    "website": "https://nic.org",
+    "startDate": "2014-05-26",
+    "endDate": "2015-12-31",
+    "summary": "Description...",
+    "highlights": [
+      "Design and develop web applications using .NET Web Forms",
+      "Perform a full spectrum of web-related tasks including design and layout, graphic creation and optimization, server-side programming, and API integration.",
+      "Integrated multiple data sources (ESRI, internal data gathering) and created a cocesive UI for representation the merged data",
+      "Support and communicate with internal clients to define business requirements."
+    ]
+  },
+  {
+    "company": "Charm City Trivia",
+    "position": "Scorekeeper/Host",
+    "website": "https://charmcitytrivia.com",
+    "startDate": "2013-10-22",
+    "endDate": "2017-12-31",
+    "summary": "Description...",
+    "highlights": [
+      "Oversaw scorekeeping, audio mixing, and presentation of a 75+ attendee trivia venue.",
+      "Developed and maintained a dynamic Excel spreadsheet to manage and export scores.",
+      "Prototyped an automated score importer to integrate with CCT's CMS",
+      "Developed a music request web application for players to pick songs for the trivia playlists"
+    ]
+  }],
+  "volunteer": [{
+    "organization": "Parks & People",
+    "position": "Volunteer Coach",
+    "website": "http://organization.com/",
+    "startDate": "2012-01-01",
+    "endDate": "2013-01-01",
+    "summary": "Description...",
+    "highlights": [
+      "Awarded 'Volunteer of the Month'"
+    ]
+  }],
+  "education": [{
+    "institution": "University of Maryland Baltimore County",
+    "area": "Information Systems",
+    "studyType": "Bachelor",
+    "startDate": "2011-09-01",
+    "endDate": "2015-12-20",
+    "gpa": "2.89",
+    "courses": [
+      "DB1101 - Basic SQL"
+    ]
+  }],
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "website": "http://publication.com",
+    "summary": "Description..."
+  }],
+  "skills": [{
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "Javascript"
+    ]
+  }],
+  "languages": [{
+    "name": "English",
+    "level": "Native speaker"
+  }],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "references": [{
+    "name": "Jane Doe",
+    "reference": "Reference..."
+  }]
+}
