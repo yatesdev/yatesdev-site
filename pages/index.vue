@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <NavBar></NavBar>
+    <!-- <SideBar></SideBar> -->
+    <!-- <MainContent></MainContent> -->
+    <!-- <FooterBar></FooterBar> -->
   </div>
 </template>
 
@@ -25,4 +28,15 @@ body {
   margin: 0%;
   background-color: #efefef;
 }
+
+#app {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 20px;
+
+  & > * {
+    grid-column: col-start / span 12;
+  }
+}
+
 </style>
