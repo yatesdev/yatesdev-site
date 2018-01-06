@@ -1,0 +1,27 @@
+{
+  "name": "yates-resume",
+  "version": "1.0.0",
+  "description": "Resume Site for Mike Yates",
+  "main": "index.js",
+  "dependencies": {
+    "nuxt": "^1.0.0-rc11"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "vue-style-loader": "^3.0.3"
+  },
+  "scripts": {
+    "start": "nuxt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yatesdev/yatesdev-site-resume.git"
+  },
+  "author": "Mike Yates <mike@yatesdev.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yatesdev/yatesdev-site-resume/issues"
+  },
+  "homepage": "https://github.com/yatesdev/yatesdev-site-resume#readme"
+}
