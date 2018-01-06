@@ -2,11 +2,25 @@
   <header>
     <a class="logo" href="/"><span>Yates</span>Dev</a>
     <button class="sidebar-toggle"></button>
+    <nav class="nav-links">
+      <div class="nav-link" v-for="section in sections" :key="section.title">
+        <a :href="section.path">{{section.title}}</a>
+      </div>
+<!--       <ul>
+        <li v-for="section in sections" :key="section.title">{{section.title}}</li>
+      </ul> -->
+    </nav>
   </header>
 </template>
 
 <script>
 export default {
+  props: {
+    sections: {
+      type: Array,
+      required: true,
+    }
+  },
   data: () => {
     return {}
   }
@@ -51,6 +65,30 @@ header {
 
   @media (min-width: 500px) {
     display: none;
+  }
+}
+
+.nav-links {
+  display: none;
+  grid-column: col-start 9 / span 3;
+  line-height: 3em;
+  @media (min-width: 500px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.nav-link {
+  display: none;
+  a {
+    margin: auto;
+    vertical-align: middle;
+    text-decoration: none;
+  }
+  // grid-column: col-start 6 / span 1;
+
+  @media (min-width: 500px) {
+    display: block;
+    flex: 1 0 auto;
   }
 }
 </style>

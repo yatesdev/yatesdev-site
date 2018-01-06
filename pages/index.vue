@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <NavBar></NavBar>
+    <NavBar :sections="sections"></NavBar>
     <!-- <SideBar></SideBar> -->
     <!-- <MainContent></MainContent> -->
     <!-- <FooterBar></FooterBar> -->
@@ -16,7 +16,15 @@ export default {
     'NavBar': NavBar,
   },
   data: () => {
-    return ResumeData;
+    return {
+      resume: ResumeData,
+      sections: [
+        { title: 'About', path: '#about' },
+        { title: 'Portfolio', path: '#portfolio' },
+        { title: 'Experience', path: '#experience' },
+        { title: 'Contact', path: '#contact' },
+      ],
+    }
   }
 }
 </script>
