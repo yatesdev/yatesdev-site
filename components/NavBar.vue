@@ -1,14 +1,13 @@
 <template>
   <header>
     <a class="logo" href="/"><span>Yates</span>Dev</a>
-    <button class="sidebar-toggle"></button>
+    <button class="sidebar-toggle" @click="toggleSidebar">
+      <i class="rsicon rsicon-menu"></i>
+    </button>
     <nav class="nav-links">
       <div class="nav-link" v-for="section in sections" :key="section.title">
         <a :href="section.path">{{section.title}}</a>
       </div>
-<!--       <ul>
-        <li v-for="section in sections" :key="section.title">{{section.title}}</li>
-      </ul> -->
     </nav>
   </header>
 </template>
@@ -23,7 +22,12 @@ export default {
   },
   data: () => {
     return {}
-  }
+  },
+  methods: {
+    toggleSidebar() {
+      this.$emit('TOGGLE_SIDEBAR');
+    },
+  },
 }
 </script>
 
@@ -62,7 +66,15 @@ header {
 .sidebar-toggle {
   grid-column: col-start 11 / span 2;
   margin: auto;
-
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  i {
+    font-size: 25px;
+    line-height: 1;
+    display: block;
+  }
   @media (min-width: 500px) {
     display: none;
   }

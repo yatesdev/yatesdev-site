@@ -1,32 +1,40 @@
 <template>
   <div id="app">
-    <NavBar :sections="sections"></NavBar>
-    <!-- <SideBar></SideBar> -->
+    <NavBar :sections="sections" v-on:TOGGLE_SIDEBAR="toggleSidebar"></NavBar>
+    <SideBar :sections="sections" :visible="showSidebar" v-on:TOGGLE_SIDEBAR="toggleSidebar"></SideBar>
     <!-- <MainContent></MainContent> -->
     <!-- <FooterBar></FooterBar> -->
   </div>
 </template>
 
 <script>
-import { NavBar } from '~/components';
+import { NavBar, SideBar } from '~/components';
 import ResumeData from '~/resume.json';
 
 export default {
   components: {
     'NavBar': NavBar,
+    'SideBar': SideBar
   },
   data: () => {
     return {
       resume: ResumeData,
       sections: [
-        { title: 'About', path: '#about' },
-        { title: 'Portfolio', path: '#portfolio' },
-        { title: 'Experience', path: '#experience' },
-        { title: 'Contact', path: '#contact' },
+        { title: 'ABOUT', path: '#about' },
+        { title: 'PORTFOLIO', path: '#portfolio' },
+        { title: 'EXPERIENCE', path: '#experience' },
+        { title: 'CONTACT', path: '#contact' },
       ],
-    }
-  }
+      showSidebar: false,
+    };
+  },
+  methods: {
+    toggleSidebar() {
+      this.showSidebar = !this.showSidebar;
+    },
+  },
 }
+
 </script>
 
 <style lang="scss">
