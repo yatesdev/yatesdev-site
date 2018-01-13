@@ -43,8 +43,6 @@ export default {
     width: 300px;
     z-index: 100;
     background-color: #07cb79;
-    -webkit-transform: translateX(300px);
-    -moz-transform: translateX(300px);
     transform: translateX(300px);
     transition: transform 400ms cubic-bezier(0.37, 0.15, 0.32, 0.94);
     &.visible {

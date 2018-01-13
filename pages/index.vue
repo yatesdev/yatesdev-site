@@ -20,10 +20,10 @@ export default {
     return {
       resume: ResumeData,
       sections: [
-        { title: 'ABOUT', path: '#about' },
-        { title: 'PORTFOLIO', path: '#portfolio' },
-        { title: 'EXPERIENCE', path: '#experience' },
-        { title: 'CONTACT', path: '#contact' },
+        { title: 'About', path: '#about' },
+        { title: 'Portfolio', path: '#portfolio' },
+        { title: 'Experience', path: '#experience' },
+        { title: 'Contact', path: '#contact' },
       ],
       showSidebar: false,
     };
@@ -52,6 +52,9 @@ body {
 
   & > * {
     grid-column: col-start / span 12;
+  }
+  & > header {
+    order: 1;
   }
 }
 
