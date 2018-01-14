@@ -1,18 +1,20 @@
 <template>
-  <header>
-    <a class="logo" href="/"><span>Yates</span>Dev</a>
-    <button class="sidebar-toggle" @click="toggleSidebar()">
-      <i class="rsicon rsicon-menu"></i>
-    </button>
-    <nav class="nav-links">
-      <div class="nav-link" v-for="section in sections" :key="section.title">
-        <nuxt-link :to="section.path">
-          {{section.title}}
-          <span></span>
-        </nuxt-link>
-      </div>
-    </nav>
-  </header>
+  <div class="nav-bar">
+    <header>
+      <a class="logo" href="/"><span>Yates</span>Dev</a>
+      <button class="sidebar-toggle" @click="toggleSidebar()">
+        <i class="rsicon rsicon-menu"></i>
+      </button>
+      <nav class="nav-links">
+        <div class="nav-link" v-for="section in sections" :key="section.title">
+          <nuxt-link :to="section.path">
+            {{section.title}}
+            <span></span>
+          </nuxt-link>
+        </div>
+      </nav>
+    </header>
+  </div>
 </template>
 
 <script>
@@ -35,6 +37,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.nav-bar {
+  display: block;
+}
 header {
   display: flex;
   position: fixed;
